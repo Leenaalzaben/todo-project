@@ -1,5 +1,6 @@
 # todo-project
-![wireframe#1 index](Wireframe.jpg)
-![wireframe#2 index](Info.jpg)
-![wireframe#3 index](LZB.png)
-![wireframe#4 index](LoGo1.png)
+
+![wireframe# index](/assets/Wireframe.jpg)
+![Info# index](/assets/Info.jpg)
+![LZB# index](/assets/LZB.png)
+![logo# index](/assets/logo.png)
