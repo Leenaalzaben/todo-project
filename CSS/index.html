@@ -2,71 +2,118 @@
 <html>
 
 <head>
-  <title> • My Day_To Do </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link html with our style sheet -->
+  <!-- For List Logo Icon -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/home.css">
   <link rel="stylesheet" href="CSS/about.css">
+
+
+  <title>My Day_To Do </title>
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+    }
+
+    p {
+      font-family: verdana;
+      font-size: 20px;
+    }
+  </style>
 </head>
 
-
-
-
-
-
 <body>
+
   <header>
-    <section>
-      <img src="assets/logo.png" alt="logo">
+    <section class="Header">
+      <div class="nav-links">
+
+        <nav>
+          <li> <a href="/index.html">Home </a></li>
+          <li> <a href="about.html">About </a></li>
+          <li> <a href="https://www.google.com">Help </a></li>
+
+
+          <ul>
+            <div class="content">
+              <p><span class="glyphicon glyphicon-list-alt"></span></p>
+
+            </div>
+
+            <!-- <li><a href="about.html">About</a></li> -->
+
+          </ul>
+
+      </div>
+      </nav>
     </section>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="">Help</a></li>
-        
-      </ul>
-    </nav>
-    <h3>ToDo List</h3>
   </header>
-
-
-
-
-
   <main>
     <section>
-
+      <h2> To Do List</h2>
+      <style> 
+      h2{
+        line-height: 2.5;
+        /* letter-spacing: 2px; */
+      }
+      
+      </style>
+      
+      
+        </style>
+    </section>
+    <form action="">
+    <section>
       <table>
         <tr>
-          <!--Two header colume-->
-          <th>Tasks</th>
-          <th>Status</th>
-
-
+          <th> List</th>
+          <th> Status</th>
         </tr>
         <tr>
-          <!--Three Row of data-->
-
-          <td>Task1</td>
-          <td>Task2</td>
-          <td>Task3</td>
+          <td> Learn js</td>
+          <td> <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> check</label><br> </td>
+          
         </tr>
-
+        <tr>
+          <td> Create HTML</td>
+          <td> <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> check</label><br></td>
+        </tr>
+        <tr>
+          <td> Walk the dog</td>
+          <td> <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> check</label><br><br></td>
+        </tr>
+        <tr>
+          <td> Watch the match</td>
+          <td> <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+            <label for="vehicle4"> check</label><br><br></td>
+        </tr>
       </table>
     </section>
+  </form>
   </main>
-
-
-
-
-
   <footer>
-    <p> &copy; 2023copy right </p>
-
+    <div id="copy-rights">
+      <p> ©2023 All Rights Reserved</p>
+      <style>
+        p {
+          font: verdana;
+          font-size: 10px;
+        }
+      </style>
+    </div>
   </footer>
-
-
-
 </body>
 
 </html>

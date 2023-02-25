@@ -2,79 +2,122 @@
 <html>
 
 <head>
-  <title> • My Day_To Do </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link html with our style sheet -->
+  <!-- For List Logo Icon -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/home.css">
   <link rel="stylesheet" href="CSS/about.css">
+
+
+  <title> Personal Information </title>
+
 </head>
 
-
-
-
-
 <body>
-  <header>
-    
-    
-    <h3>LOGO</h3>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="">Help</a></li>
 
-      </ul>
-    </nav>
+
+  <header>
+    <section class="Header">
+      <div class="nav-links">
+
+        <nav>
+          <li> <a href="/index.html">Home </a></li>
+          <li> <a href="about.html">About </a></li>
+          <li> <a href="https://www.google.com">Help </a></li>
+
+          <ul>
+            <div class="content">
+              <p><span class="glyphicon glyphicon-list-alt"></span></p>
+
+            </div>
+
+            <!-- <li><a href="about.html">About</a></li> -->
+
+          </ul>
+
+      </div>
+      </nav>
+
+    </section>
   </header>
 
-
-
-
   <main>
+    <section>
+
+      <h2> Your Name</h2>
+      <p class="ex1">Overview About Yourself </p>
+      <style>
+        p {
+          position: absolute;
+          left: 640px;
+          top: 300px;
+        }
+      </style>
+
+
+      <div class="container">
+        <img src="/assets/P_img_g.png" alt="Cinque Terre" width="270" height="250">
+      </div>
+
+
+    </section>
+
+
     <!--1.Add Info Image-->
     <!-- <section>
       <img src="LZB.png">
     </section> -->
+
+    <h2> Contact me</h2>
+
+
     <!--2. Name -->
     <section>
       <label>Name:</label>
-      <input type="text" id="name">
+      <input type="text" id="name"><br><br>
+
+
     </section>
     <!--3. email -->
     <section>
+
       <label>Email:</label>
-      <input type="text" id="Email">
+      <input type="text" id="Email"><br><br>
+
+
     </section>
+    <!-- phone -->
+    <section>
+      <label> phone:</label>
+      <input type="text" id="phone"><br><br>
+    </section>
+
     <!--4. Massage -->
     <section>
       <label>Massage:</label>
-      <input type="text" id="Massage">
-
+      <input type="text" id="Massage"><br><br>
     </section>
-
     <!--5.Submit Button-->
     <section>
-      <button type="button" onclick="alert('Hello')">Submit!</button>
+      <button type="button" onclick="alert('Done!')">Send</button>
     </section>
-    <section>
 
-    </section>
   </main>
-
-
-
-
-
-
-
-
-
-  <footer>
-    <p> &copy; 2023copy right </p>
-  </footer>
-
-
-
+  <!-- <footer>
+    <div id="copy-rights">
+      <p> ©2023 All Rights Reserved</p>
+      <style>
+        p {
+          font: verdana;
+          font-size: 10px;
+        }
+      </style>
+    </div>
+  </footer> -->
 </body>
 
 </html>
