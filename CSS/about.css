@@ -30,7 +30,7 @@ body {
 
 
 h2 {
-    
+/* contact me */
     color: rgb(163, 45, 45);
     text-align: center;
     font: bold;
@@ -41,41 +41,43 @@ h2 {
     text-shadow: 2px 2px 5px;
     position: relative;
 }
+
 img {
+    /* avatar */
     position: absolute;
-            left: 1100px;
-            top: 150px;
+    left: 1100px;
+    top: 150px;
 }
 
 p.ex1 {
+    /* border for overview */
     border: 5px solid rgb(141, 103, 56);
     padding: 40px;
-    /* background-color: rgb(237, 163, 107); */
     padding-block-end: 35px;
 
 }
 
+
 p {
+    /* Overview About Yourself */
     font-family: verdana;
     font-size: 20px;
+    position: absolute;
+    left: 640px;
+    top: 300px;
 }
+
 /* Contact me */
 
-/* .lbl {
-    font-size: larger;
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 25px;
-  } */
-  .label {
-    
+.label {
+/* position of labels */
     color: rgb(179, 174, 30);
     padding: 8px;
     position: absolute;
     left: 1100px;
     top: 150px;
 
-  }
+}
 
 
 
@@ -83,17 +85,15 @@ p {
 
 
 footer {
-    margin-top: auto;
+
     background-color: rgb(66, 76, 69);
     padding: 10px;
-    
-}
-
-#copy-rights {
 
     color: rgb(6, 4, 0);
     margin-top: 25px;
     margin-bottom: 25px;
     text-decoration: none;
     text-align: center;
+
 }
+
