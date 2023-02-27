@@ -7,101 +7,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- link html with our style sheet -->
   <!-- For List Logo Icon -->
-  <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
+  <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./home.css">
   <link rel="stylesheet" href="./about.css">
 
-
-  <title> Personal Information </title>
+  <title> My Day_To Do </title>
 
 </head>
 
 <body>
+
   <header>
     <section class="Header">
       <div class="nav-links">
 
         <nav>
-          <li> <a href="./index.html">Home </a></li>
-          <li> <a href="./about.html">About </a></li>
+          <ul>
+          <li> <a href="/CSS/index.html">Home </a></li>
+          <li> <a href="/CSS/about.html">About </a></li>
           <li> <a href="https://www.google.com">Help </a></li>
 
-          <ul>
+
+         
             <!-- <div class="content">
               <p><span class="glyphicon glyphicon-list-alt"></span></p>
 
             </div> -->
 
+            <!-- <li><a href="about.html">About</a></li> -->
+
           </ul>
-
+</nav>
       </div>
-      </nav>
-
+      
     </section>
   </header>
-
   <main>
     <section>
-
-      <h2> Your Name</h2>
-      <p class="ex1">Overview About Yourself </p>
+      <h2> To Do List</h2>
       
 
 
-      <div class="container">
-        <img src="/assets/P_img_g.png" alt="Cinque Terre" width="270" height="250">
-      </div>
-
 
     </section>
+    <form action="">
+      <section>
+        <table>
+          <tr>
+            <th> List</th>
+            <th> Status</th>
+          </tr>
+          <tr>
+            <td> Learn js</td>
+            <td> <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label for="vehicle1"> check</label><br>
+            </td>
 
-
-    <!--1.Add Info Image-->
-    <!-- <section>
-      <img src="LZB.png">
-    </section> -->
-
-    <h2> Contact me</h2>
-
-
-    <!--2. Name -->
-    <section>
-      <label>Name:</label>
-      <input type="text" id="name"><br><br>
-
-
-    </section>
-    <!--3. email -->
-    <section>
-
-      <label>Email:</label>
-      <input type="text" id="Email"><br><br>
-
-
-    </section>
-    <!-- phone -->
-    <section>
-      <label> phone:</label>
-      <input type="text" id="phone"><br><br>
-    </section>
-
-    <!--4. Massage -->
-    <section>
-      <label>Massage:</label>
-      <input type="text" id="Massage"><br><br>
-    </section>
-    <!--5.Submit Button-->
-    <section>
-      <button type="button" onclick="alert('Done!')">Send</button>
-    </section>
-
+          </tr>
+          <tr>
+            <td> Create HTML</td>
+            <td> <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+              <label for="vehicle2"> check</label><br>
+            </td>
+          </tr>
+          <tr>
+            <td> Walk the dog</td>
+            <td> <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+              <label for="vehicle3"> check</label><br><br>
+            </td>
+          </tr>
+          <tr>
+            <td> Watch the match</td>
+            <td> <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+              <label for="vehicle4"> check</label><br><br>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </form>
   </main>
+
+
+
+
   <footer>
     <div id="copy-rights">
       <h5> ©2023 All Rights Reserved</h5>
-      
+
+
+
     </div>
   </footer>
 </body>
