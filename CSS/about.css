@@ -3,11 +3,10 @@
 :root {
     --background: #b7c8d8;
     --headline: #a82d17;
-    --paragraph: #fff3ec;
-    --button-bg: #382c81;
+    --paragraph: #0b0a0a;
+    --button-bg: #adaac2;
     --button-text: #eae4e3;
 }
-
 
 
 * {
@@ -16,14 +15,14 @@
 
 }
 
-/* Header part */
+/* Header part  . for class*/
 .Header {
     min-height: 100px;
     width: 100%;
     background-image: linear-gradient(rgba(158, 168, 167, 0.7), rgba(178, 185, 169, 0.9));
     background-position: center;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
 }
 
 /* Arrange The Nav */
@@ -31,12 +30,8 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    /* gap: 100px; */
-    list-style-type: none;
 
 }
-
-
 
 body {
     width: 100%;
@@ -50,10 +45,10 @@ h2 {
     color: var(--headline);
     text-align: center;
     font: bold;
-    font-size: 30px;
-    font-style: normal;
+    font-size: 27px;
+    font-style: initial;
     line-height: 2;
-    font-family: monospace;
+    font-family:'Times New Roman', Times, serif;
     text-shadow: 0px 3px 5px;
     position: relative;
 }
@@ -71,48 +66,60 @@ img {
 p.firstAnchor {
     /* border for overview */
     display: flex;
-    border: 3px solid rgb(141, 103, 56);
-    padding: 60px;
-    margin-inline: 30%;
-    padding-block-end: 50px;
-
+    border: 5px solid rgb(141, 103, 56);
+    padding: 40px;
+    margin-inline: 40%;
+    padding-block-end: 30px;
 
 }
 
-*/ p {
+*/ 
+p {
     /* Overview About Yourself */
-   
 
-    font-family: verdana;
+
+    font-family:'Times New Roman', Times, serif;
     font-size: 20px;
     position: absolute;
-    left: 640px;
+    left: 600px;
     top: 300px;
+    
 }
+
+form {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+
 
 /* Contact me */
 
 .label {
     /* position of labels */
-    
+
     color: rgb(227, 224, 118);
     padding: 17px;
     position: absolute;
-    left: 1100px;
+    left: 50;
     top: 150px;
 
 }
 
-
+/* 
 
 /* Footer */
 
 
 footer {
 
-    background-color:  rgb(155, 168, 159);
+    background-color: var(--button-bg);
     padding: 10px;
-
     color: rgb(6, 4, 0);
     margin-top: 25px;
     margin-bottom: 25px;

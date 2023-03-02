@@ -4,7 +4,7 @@
     --background: #cfbcb6;
     --headline: #121211;
     --paragraph: #fff3ec;
-    --button-bg: #382c81;
+    --button-bg: #adaac2;
     --button-text: #eae4e3;
 }
 
@@ -39,7 +39,7 @@ nav ul{
 
 }
 nav ul li{
-    margin: 4%;
+    margin: 3%;
 }
 
 /* nav {
@@ -98,7 +98,7 @@ td {
 
 footer {
    
-    background-color: rgb(155, 168, 159);
+    background-color: var(--button-bg);
     padding: 10px;
     
     color: rgb(6, 4, 0);

@@ -17,7 +17,6 @@ if (gender == "male") {
 }
 
 
-
 // 3.To Ask the user to Enter Age as Input.
 var userAge = prompt("What is your Age?");
 if (userAge > 0) {
@@ -27,28 +26,30 @@ if (userAge > 0) {
 }
 
 
-
 // 4. Ask the user to confirm if he wants to skip the welcoming message.
-var userAnswer;
-userAnswer = confirm('Do you want to SKIP this massage!');
-console.log(userAnswer);
+// 5. Alert a welcoming message with the name of the user
 
 
+var userAnswer = confirm("Do you want to skip the welcoming message?");
 
-// 5. Alert a welcoming message with the name of the user 
-//and the title Mr if the user is male and Ms if the user is female,
-// and if the gender input is not correct alert the welcoming message without the title
-// according to the confirmation.
-var name = prompt("Please enter your Name", "Type Here");
-var gender = prompt("Please enter your gender", "Type Here");
 
-if (gender == 'male') {
-    alert("Welcome, MR. " + name);
+if (userAnswer == true) {
+    userAnswer = console.log("User wants to skip the welcoming message.");
 
-}
-else if (gender == 'female') {
-    alert("Welcome, MS. " + name);
 
 } else {
-    alert(" Unknown gender ");
+    var name = prompt("Please enter your Name");
+
+    if (gender == 'male') {
+        alert("Welcome, MR. " + name);
+
+    }
+    else if (gender == 'female') {
+        alert("Welcome, MS. " + name);
+    } else {
+        alert(" Unknown ");
+    }
+
 }
+
+
