@@ -59,11 +59,16 @@ if (userAnswer == true) {
 //---------------------1st Q----------------
 //__________________________________________
 let userNewAnswer = [];
-let invalidAnswers = [];
+
 let age = prompt("Are you over 18 years old? (Yes/No)");
 function checkAge(age) {
+   if(age==""){
+    userNewAnswer.push("Invalid");
+
+   } else{
     userNewAnswer.push(age);
-    invalidAnswers.push(age);
+    
+   }
 
 }
 checkAge(age);
@@ -75,9 +80,13 @@ checkAge(age);
 
 let answerTwo = prompt("Do you like pizza? (Yes/No)")
 function pizzaAnswer(answerTwo) {
-    userNewAnswer.push(answerTwo);
-    invalidAnswers.push(answerTwo);
+    if(answerTwo==""){
 
+        userNewAnswer.push("Invalid");
+    }else{
+    userNewAnswer.push(answerTwo);
+   
+    }
 }
 pizzaAnswer(answerTwo);
 
@@ -87,10 +96,16 @@ pizzaAnswer(answerTwo);
 
 let answerThree = prompt("Have you ever been skydiving? (Yes/No)")
 function skyDivingAnswer(answerThree) {
+    
+    if(answerThree==""){
+        userNewAnswer.push("Invalid");
+
+    } else{
     userNewAnswer.push(answerThree);
+    }
 }
 skyDivingAnswer(answerThree);
-invalidAnswers.push(answerThree);
+
 
 
 
@@ -99,16 +114,14 @@ invalidAnswers.push(answerThree);
 // We want to insert the inputs in loop
 
 for (var i = 0; i < userNewAnswer.length; i++) {
-    if (invalidAnswers.length === 0) {
-            
-    // console.log(invalidAnswers[i]);
-
-    console.log("invalid"+ invalidAnswers[i]);
     
-    }
+        
+    
     console.log(userNewAnswer[i]);
+    
 
 }
+console.log(userNewAnswer);
 
 
 
