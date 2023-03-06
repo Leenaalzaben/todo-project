@@ -1,6 +1,6 @@
 var gender, male, female;
 // 1. To Ask the user to enter Name as Input.
-var userName = prompt("What is your Name leena ?");
+var userName = prompt("What is your Name  ?");
 console.log(userName);
 
 
@@ -37,14 +37,14 @@ var userAnswer = confirm("Do you want to skip the welcoming message?");
 if (userAnswer == true) {
     userAnswer = console.log("User wants to skip the welcoming message.");
 } else {
-    var name = prompt("Please enter your Name");
+    // var name = prompt("Please enter your Name");
 
     if (gender == 'male') {
-        alert("Welcome, MR. " + name);
+        alert("Welcome, MR. " + userName);
 
     }
     else if (gender == 'female') {
-        alert("Welcome, MS. " + name);
+        alert("Welcome, MS. " + userName);
     } else {
         alert(" Unknown ");
     }
@@ -56,18 +56,75 @@ if (userAnswer == true) {
 
 // 1. Add new three Yes / No question 
 
-//----------------------------------------------
+//---------------------1st Q----------------
+//__________________________________________
+let userNewAnswer = [];
+
+let age = prompt("Are you over 18 years old? (Yes/No)");
+function checkAge(age) {
+   if(age==""){
+    userNewAnswer.push("Invalid");
+
+   } else{
+    userNewAnswer.push(age);
+    
+   }
+
+}
+checkAge(age);
 
 
 
-var userInput = ""; 
-var answer = prompt("Are you over 18 years old ?");
-if (answer >= 18) {
-    console.log(answer);
-    // if the input was empty 
-} else if (userInput.length === 0) {
-    console.log("Invalid input");
-  } 
+//-------------------2nd Q------------------
+//__________________________________________
+
+let answerTwo = prompt("Do you like pizza? (Yes/No)")
+function pizzaAnswer(answerTwo) {
+    if(answerTwo==""){
+
+        userNewAnswer.push("Invalid");
+    }else{
+    userNewAnswer.push(answerTwo);
+   
+    }
+}
+pizzaAnswer(answerTwo);
+
+
+//-------------------3nd Q------------------
+//__________________________________________
+
+let answerThree = prompt("Have you ever been skydiving? (Yes/No)")
+function skyDivingAnswer(answerThree) {
+    
+    if(answerThree==""){
+        userNewAnswer.push("Invalid");
+
+    } else{
+    userNewAnswer.push(answerThree);
+    }
+}
+skyDivingAnswer(answerThree);
+
+
+
+
+//-------------------Array-----------------------
+//_______________________________________________
+// We want to insert the inputs in loop
+
+for (var i = 0; i < userNewAnswer.length; i++) {
+    
+        
+    
+    console.log(userNewAnswer[i]);
+    
+
+}
+console.log(userNewAnswer);
+
+
+
 
 
 
